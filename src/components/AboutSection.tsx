@@ -35,7 +35,7 @@ export const AboutSection = () => {
           </h3>
           
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            I'm Haribaskar R, an aspiring Data Analyst with a strong academic background in Information Technology and a growing expertise in data analytics. Currently in my third year at K.S. Rangasamy College of Technology, I have developed practical skills in Power BI, SQL, Excel, and Python. My academic journey has involved building interactive dashboards, conducting business data analysis, and generating meaningful insights from raw datasets. I enjoy working with data to uncover patterns, track performance, and support evidence-based decision-making.
+            I'm Haribaskar R, an aspiring Data Analyst with a strong academic background in Information Technology and a growing expertise in data analytics. Currently in my final year at K.S. Rangasamy College of Technology, I have developed practical skills in Power BI, SQL, Excel, and Python. My academic journey has involved building interactive dashboards, conducting business data analysis, and generating meaningful insights from raw datasets. I enjoy working with data to uncover patterns, track performance, and support evidence-based decision-making.
           </p>
           
           <div className="space-y-4">
