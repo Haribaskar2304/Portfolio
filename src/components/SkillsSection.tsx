@@ -14,6 +14,7 @@ const skills = [
   { name: "PostgreSQL", category: "languages", level: 100 },
   { name: "MySQL", category: "languages", level: 100 },
   { name: "Pandas", category: "libraries", level: 100 },
+  { name: "Seaborn", category: "libraries", level: 100 },
   { name: "NumPy", category: "libraries", level: 100 },
   { name: "Matplotlib", category: "libraries", level: 100 },
   { name: "Excel", category: "visualization", level: 100 },
