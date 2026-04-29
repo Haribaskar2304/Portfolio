@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Download, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/Haribaskar_R-Data_Analyst.pdf";
 
 const roles = [
   "Data Analyst",
-  "Power BI Developer"
+  "Business Intelligence Analyst"
 ];
 
 export const HeroSection = () => {

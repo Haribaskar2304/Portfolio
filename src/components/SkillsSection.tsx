@@ -1,18 +1,20 @@
 import { useState } from "react";
+import { FaPython } from "react-icons/fa";
 import { Code, Database, BarChart3, Monitor } from "lucide-react";
 
 const skillCategories = [
   { id: "all", name: "All", icon: Monitor },
-  { id: "languages", name: "Languages & Databases", icon: Database },
+  { id: "languages", name: "Programming Language", icon: FaPython },
+  { id: "database", name: "Database", icon: Database },
   { id: "libraries", name: "Libraries", icon: Code },
-  { id: "visualization", name: "Data Visualization Tools", icon: BarChart3 },
+  { id: "visualization", name: "Reporting Tools", icon: BarChart3 },
   { id: "tools", name: "Data Analysis Tools", icon: Monitor }
 ];
 
 const skills = [
   { name: "Python", category: "languages", level: 100 },
-  { name: "PostgreSQL", category: "languages", level: 100 },
-  { name: "MySQL", category: "languages", level: 100 },
+  { name: "PostgreSQL", category: "database", level: 100 },
+  { name: "MySQL", category: "database", level: 100 },
   { name: "Pandas", category: "libraries", level: 100 },
   { name: "Seaborn", category: "libraries", level: 100 },
   { name: "NumPy", category: "libraries", level: 100 },
@@ -20,8 +22,8 @@ const skills = [
   { name: "Excel", category: "visualization", level: 100 },
   { name: "Tableau", category: "visualization", level: 100 },
   { name: "Power BI", category: "visualization", level: 100 },
-  { name: "Jupyter", category: "tools", level: 100 },
-  { name: "Git", category: "tools", level: 100 },
+  { name: "Jupyter Notebook", category: "tools", level: 100 },
+  { name: "Google Colab", category: "tools", level: 100 },
   { name: "VS Code", category: "tools", level: 100 }
 ];
 
@@ -63,23 +65,12 @@ export const SkillsSection = () => {
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-foreground">
+              <h3 className="text-lg font-semibold text-foreground text-center w-full">
                 {skill.name}
               </h3>
               {/* <span className="text-sm font-medium text-primary">
                 {skill.level}%
               </span> */}
-            </div>
-            
-            <div className="relative">
-              <div className="w-full bg-muted rounded-full h-3">
-                <div
-                  className="h-3 bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000 ease-out relative overflow-hidden"
-                  style={{ width: `${skill.level}%` }}
-                >
-                  <div className="absolute inset-0 bg-shimmer animate-shimmer"></div>
-                </div>
-              </div>
             </div>
           </div>
         ))}

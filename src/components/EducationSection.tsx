@@ -3,9 +3,14 @@ import { GraduationCap, MapPin, Calendar, BookOpen } from "lucide-react";
 export const EducationSection = () => {
   const coursework = [
     "Data Analytics",
-    "Database Management Systems", 
+    "Exploratory Data Analysis (EDA)",
+    "Database Management Systems",
+    "Data Warehousing",
+    "ETL (Extract, Transform, Load)",
+    "Data-Driven Decision Making with Power BI", 
     "Business Intelligence",
-    "Machine Learning"
+    "Machine Learning",
+    "Data Governance & Data Quality"
   ];
 
   return (
@@ -38,7 +43,7 @@ export const EducationSection = () => {
                 
                 <div className="flex items-center space-x-2">
                   <BookOpen className="w-5 h-5 text-accent" />
-                  <span className="text-muted-foreground">CGPA: 7.36</span>
+                  <span className="text-muted-foreground">CGPA: 7.42</span>
                 </div>
                 
                 <div className="flex items-center space-x-2">

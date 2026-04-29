@@ -3,21 +3,21 @@ import { Calendar, MapPin, Award } from "lucide-react";
 const experiences = [
   {
     id: 1,
-    company: "Sedin Technologies",
+    company: "Sedin Technologies Private Limited",
     position: "Data Analyst Intern",
-    duration: "July 2025 - Present",
-    location: "Remote",
+    duration: "June 2025 - September 2025",
+    location: "Onsite",
     achievements: [
       "SQL mastery and advanced database querying",
       "Data profiling and quality assessment",
       "Business reporting and dashboard creation",
-      "Problem-solving with SQL, Excel, Python, Power BI"
+      "Problem-solving with SQL, Excel, Power BI, Microsoft Fabric Analytics"
     ],
     side: "left"
   },
   {
     id: 2,
-    company: "Oasis Infobyte",
+    company: "Oasis Infobyte pvt ltd",
     position: "Data Analytics Intern",
     duration: "August 2024 - September 2024",
     location: "Remote",
@@ -28,20 +28,6 @@ const experiences = [
       "Data cleaning, visualization, and GitHub publishing"
     ],
     side: "right"
-  },
-  {
-    id: 3,
-    company: "Oasis Infobyte",
-    position: "Data Analytics Intern",
-    duration: "June 2024 - July 2024",
-    location: "Remote",
-    achievements: [
-      "Machine learning model development",
-      "Statistical analysis and hypothesis testing",
-      "Data visualization using Python libraries",
-      "Research and development in data science"
-    ],
-    side: "left"
   }
 ];
 

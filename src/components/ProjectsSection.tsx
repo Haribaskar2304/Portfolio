@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { ExternalLink, X, Eye } from "lucide-react";
+import StockMarket from "../assets/project/StockMarket.jpg";
+import BankingTransactionManagementSystem from "../assets/project/BTMS.jpg";
 import BikeShop from "../assets/project/Bikeshop.jpg";
 import car from "../assets/project/car.png";
 import job from "../assets/project/job.png";
@@ -7,7 +9,8 @@ import PhonePe from "../assets/project/PhonePe.jpg";
 import preview from "../assets/project/preview.jpg";
 
 const projectCategories = [
-  { id: "all", name: "All" }, 
+  { id: "all", name: "All" },
+  { id: "sql", name: "SQL" }, 
   { id: "powerbi", name: "Using Power BI" },
   { id: "excel", name: "Using Excel" }
 ];
@@ -15,47 +18,65 @@ const projectCategories = [
 const projects = [
   {
     id: 1,
+    title: "Stock Market Analysis Report",
+    category: "powerbi",
+    description: "Developed a Power BI dashboard for stock data analysis using SQL, enabling trend insights, comparisons, and performance evaluation.",
+    image: StockMarket,
+    demoLink: "https://app.powerbi.com/reportEmbed?reportId=48a097aa-d056-4de2-8ecb-42e9b550d1f9&autoAuth=true&ctid=3d9987fa-6645-491d-9d3b-a53da0552d7c",
+    technologies: ["KQL Database", "Power BI", "DAX"]
+  },
+  {
+    id: 2,
+    title: "Banking Transaction Management System",
+    category: "sql",
+    description: "Developed a SQL-based Banking Transaction System with automated transactions, audit logging, and advanced reporting capabilities.",
+    image: BankingTransactionManagementSystem,
+    demoLink: "https://github.com/Haribaskar2304/Banking-Transaction-Management-System.git",
+    technologies: [ "PostgreSQL", "PgAdmin", "RDBMS"]
+  },
+  {
+    id: 3,
     title: "Bike Shop Analysis",
     category: "powerbi",
     description: "Comprehensive analysis of bike shop sales data with interactive Power BI dashboards showing revenue trends, customer segments, and product performance.",
     image: BikeShop,
-    demoLink: "#",
+    demoLink: "https://app.powerbi.com/reportEmbed?reportId=2a8234b7-5ab0-47c0-8d7c-836dad09d37f&autoAuth=true&ctid=3d9987fa-6645-491d-9d3b-a53da0552d7c",
     technologies: ["Power BI", "SQL", "Excel"]
   },
   {
-    id: 2,
+    id: 4,
     title: "Sales Performance Analysis",
     category: "powerbi",
     description: "Real-time sales dashboard analyzing KPIs, regional performance, and sales forecasting with automated reporting features.",
     image: preview,
-    demoLink: "#",
-    technologies: ["Power BI", "DAX", "Power Query"]
+    demoLink: "https://app.powerbi.com/reportEmbed?reportId=2429d4db-29ba-4751-8a24-ce0c3abf9755&autoAuth=true&ctid=3d9987fa-6645-491d-9d3b-a53da0552d7c",
+    technologies: ["Power BI", "DAX", "Power Query"],
   },
   {
-    id: 3,
+    id: 5,
     title: "PhonePe Analysis",
     category: "powerbi",
     description: "Digital payment trends analysis using PhonePe transaction data, revealing usage patterns and growth insights across different regions.",
     image: PhonePe,
-    demoLink: "#",
+    demoLink: "https://app.powerbi.com/reportEmbed?reportId=2713df69-bf3d-48d0-8efb-b38e666275d1&autoAuth=true&ctid=3d9987fa-6645-491d-9d3b-a53da0552d7c",
     technologies: ["Power BI", "Python", "JSON"]
   },
   {
-    id: 4,
+    id: 6,
     title: "Car Sales Analysis",
     category: "excel",
     description: "Advanced Excel dashboard for automotive sales analysis with pivot tables, charts, and automated reporting for dealer performance tracking.",
     image: car,
-    demoLink: "#",
+    demoLink: "https://github.com/Haribaskar2304/Car-Kaggle-using-Excel.git",
     technologies: ["Excel", "VBA", "Pivot Tables"]
   },
   {
-    id: 5,
+    id: 7,
     title: "Job in AI and Market Trends Analysis",
     category: "excel",
     description: "Market research analysis of AI job trends, salary benchmarks, and skill requirements using advanced Excel modeling and visualization.",
     image: job,
-    demoLink: "#",
+    demoLink: "https://github.com/Haribaskar2304/Job-in-AI-and-Market-Trend-Analysis.git",
     technologies: ["Excel", "Power Query", "Statistics"]
   }
 ];
@@ -127,7 +148,15 @@ export const ProjectsSection = () => {
                 {project.description}
               </p>
               
-              <div className="flex flex-wrap gap-2 mb-4">
+              <a href={project.demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-3 px-4 py-2 bg-green-500 text-white rounded-lg hover:scale-105 transition"
+              >
+                Live Demo
+              </a>
+
+              <div className="flex flex-wrap gap-2 mt-4">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
