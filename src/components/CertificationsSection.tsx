@@ -8,64 +8,69 @@ import course5 from "../assets/certification/course5.png";
 import course6 from "../assets/certification/course6.png";
 import course7 from "../assets/certification/course7.png";
 import course8 from "../assets/certification/course8.png";
+import course9 from "../assets/certification/course9.png";
+import course10 from "../assets/certification/course10.png";
+import course11 from "../assets/certification/course11.png";
+import course12 from "../assets/certification/course12.png";
 
 const certifications = [
   {
     id: 1,
-    title: "Microsoft Power BI Data Analyst",
-    issuer: "Microsoft",
+    title: "Oracle Analytics Cloud 2025 Certified Professional",
+    issuer: "Oracle(Oracle Cloud)",
     date: "2025",
-    description: "Comprehensive certification covering data preparation, modeling, visualization, and analysis using Power BI.",
-    image: course5,
+    description: "Validates expertise in cloud-based analytics, dashboard creation, and data-driven decision-making using Oracle Analytics Cloud.",
+    image: course1,
     credentialLink: "#"
-  },  {
+  },  
+  {
     id: 2,
-    title: "Python for Data Science",
-    issuer: "IBM",
-    date: "2024",
-    description: "Advanced Python programming for data analysis, including pandas, numpy, and machine learning libraries.",
-    image: course3,
+    title: "Oracle Cloud Database Services 2025 Certified Professional",
+    issuer: "Oracle(Oracle Cloud)",
+    date: "2025",
+    description: "Demonstrates skills in Oracle cloud database services, data management, and enterprise-level database operations.",
+    image: course2,
     credentialLink: "#"
   },
   {
     id: 3,
-    title: "SQL Database Management",
-    issuer: "Oracle",
-    date: "2024",
-    description: "Database design, query optimization, and advanced SQL techniques for business intelligence.",
-    image: course8,
+    title: "PostgreSQL for Everybody (Specialization)",
+    issuer: "University of Michigan (Coursera)",
+    date: "2025",
+    description: "Comprehensive training in PostgreSQL, database design, SQL queries, and data modeling.",
+    image: course3,
     credentialLink: "#"
   },
   {
     id: 4,
-    title: "Data Analytics with Excel",
-    issuer: "Microsoft",
-    date: "2024",
-    description: "Advanced Excel techniques for data analysis, pivot tables, and business intelligence dashboards.",
+    title: "Harnessing the Power of Data with Power BI",
+    issuer: "Microsoft(Coursera)",
+    date: "2025",
+    description: "Focuses on building dashboards and extracting insights using Power BI tools and DAX.",
     image: course4,
     credentialLink: "#"
   },
   {
     id: 5,
-    title: "Concepts in SQl",
-    issuer: "coursera",
-    date: "2024",
-    description: "Data visualization and dashboard creation using Tableau for business analytics and reporting.",
-    image:course1,
+    title: "Extract, Transform and Load Data in Power BI",
+    issuer: "Microsoft(Coursera)",
+    date: "2025",
+    description: "Focuses on ETL processes and data transformation using Power Query in Power BI.",
+    image:course5,
     credentialLink: "#"
   },
   {
     id: 6,
-    title: "Machine Learning Fundamentals",
-    issuer: "Coursera",
-    date: "2025",
-    description: "Introduction to machine learning algorithms, supervised and unsupervised learning techniques.",
-    image: course2,
+    title: "Concepts in SQL",
+    issuer: "Coursera Project Network",
+    date: "2024",
+    description: "Covers SQL fundamentals including queries, filtering, and relational database concepts.",
+    image: course6,
     credentialLink: "#"
   },
   {
     id: 7,
-    title: "Data Analytics	Job	Simulation",
+    title: "Data Analytics Job	Simulation",
     issuer: "Deloitte",
     date: "2025",
     description: "Introduction to machine learning algorithms, supervised and unsupervised learning techniques.",
@@ -78,7 +83,43 @@ const certifications = [
     issuer: "Coursera",
     date: "2024",
     description: "Advanced Excel techniques for data analysis, pivot tables, and business intelligence dashboards.",
-    image: course6,
+    image: course8,
+    credentialLink: "#"
+  },
+  {
+    id: 9,
+    title: "Introduction to Data Analytics",
+    issuer: "IBM(Coursera)",
+    date: "2024",
+    description: "Covers fundamentals of data analysis, including data handling, visualization, and business insights.",
+    image: course9,
+    credentialLink: "#"
+  },
+  {
+    id: 10,
+    title: "Preparing Data for Analysis with Microsoft Excel",
+    issuer: "Microsoft(Coursera)",
+    date: "2024",
+    description: "Advanced Excel techniques for data analysis, pivot tables, and business intelligence dashboards.",
+    image: course10,
+    credentialLink: "#"
+  },
+  {
+    id: 11,
+    title: "Python Zero to Hero",
+    issuer: "GUVI(HCL Partner)",
+    date: "2025",
+    description: "Advanced Excel techniques for data analysis, pivot tables, and business intelligence dashboards.",
+    image: course11,
+    credentialLink: "#"
+  },
+  {
+    id: 12,
+    title: "Introduction to MongoDB (For Students)",
+    issuer: "MongoDB",
+    date: "2024",
+    description: "Introduces NoSQL concepts, MongoDB database structure, and basic data operations.",
+    image: course12,
     credentialLink: "#"
   }
 ];
